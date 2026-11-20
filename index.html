@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="applicable-device" content="pc,mobile">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#c1121f">
+<title>今日爆料网 - 每日热点新闻爆料与社会突发事件独家深度报道资讯平台</title>
+<meta name="keywords" content="今日爆料,热点新闻爆料,社会突发事件,独家爆料,今日热点资讯">
+<meta name="description" content="今日爆料网专注每日热点新闻爆料，第一时间为您提供社会突发事件、娱乐圈独家爆料、民生热议话题等深度报道与资讯解读，汇聚全网最新爆料信息，助您快速掌握今日热点动态，了解事件真相与最新进展。">
+<meta name="author" content="今日爆料网编辑部">
+<meta name="copyright" content="今日爆料网">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="今日爆料网">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="今日爆料网 - 每日热点新闻爆料与社会突发事件深度报道">
+<meta property="og:description" content="聚合每日热点新闻爆料线索，追踪社会突发事件进展，提供民生热议话题的深度报道与资讯解读。">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="今日爆料网 - 每日热点新闻爆料">
+<meta name="twitter:description" content="每日热点新闻爆料与社会突发事件深度报道资讯平台。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Microsoft YaHei","PingFang SC","Helvetica Neue",Arial,sans-serif;color:#22252a;background:#f5f6f8;line-height:1.85;font-size:16px}
+a{color:#c1121f;text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.site-header{background:#fff;border-bottom:3px solid #c1121f;position:sticky;top:0;z-index:20;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.header-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;max-width:1160px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-mark{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,#c1121f,#ff5a36);color:#fff;font-weight:700;font-size:19px;display:flex;align-items:center;justify-content:center;letter-spacing:-1px}
+.brand-name{font-size:21px;font-weight:700;color:#1a1c20;letter-spacing:1px}
+.brand-slogan{font-size:12px;color:#8a9099;letter-spacing:2px}
+.site-nav{display:flex;flex-wrap:wrap;gap:6px}
+.site-nav a{padding:7px 13px;border-radius:16px;font-size:14px;color:#454b55;background:#f2f3f5;transition:background .2s,color .2s}
+.site-nav a:hover{background:#c1121f;color:#fff;text-decoration:none}
+.hero{background:linear-gradient(135deg,#1c1f26 0%,#3a1014 55%,#8c1420 100%);color:#fff;padding:52px 0 44px}
+.hero h1{font-size:32px;line-height:1.5;font-weight:700;letter-spacing:1px;margin-bottom:16px}
+.hero p{font-size:16px;color:#e7dfe0;max-width:940px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.hero-tags span{font-size:13px;padding:5px 12px;border:1px solid rgba(255,255,255,.4);border-radius:14px;color:#fff}
+main{padding:34px 0 10px}
+.card{background:#fff;border-radius:12px;padding:26px 28px;margin-bottom:24px;box-shadow:0 2px 12px rgba(20,24,31,.06)}
+h2{font-size:23px;color:#1a1c20;margin-bottom:16px;padding-left:13px;border-left:5px solid #c1121f;line-height:1.4}
+h3{font-size:17px;color:#1a1c20;margin:16px 0 8px}
+p{margin-bottom:14px;color:#3c424c}
+.intro-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:6px}
+.intro-item{background:#fafafb;border:1px solid #eceef1;border-radius:10px;padding:16px 18px}
+.intro-item h3{margin-top:0;font-size:16px;color:#c1121f}
+.intro-item p{font-size:14px;margin-bottom:0;color:#4d5560}
+.cat-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.cat{background:#fff;border:1px solid #eceef1;border-left:4px solid #c1121f;border-radius:10px;padding:16px 18px}
+.cat h3{margin:0 0 6px;font-size:16px}
+.cat p{font-size:14px;margin:0;color:#525a66}
+.cat .tagline{display:inline-block;margin-top:10px;font-size:12px;color:#8a9099}
+.hot-list{list-style:none}
+.hot-list li{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:1px dashed #e6e8ec}
+.hot-list li:last-child{border-bottom:none}
+.hot-index{flex:0 0 34px;height:34px;border-radius:8px;background:#fdeceb;color:#c1121f;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:15px}
+.hot-index.top{background:#c1121f;color:#fff}
+.hot-body h3{margin:0 0 4px;font-size:16.5px}
+.hot-body p{margin:0;font-size:14px;color:#5a626d}
+.hot-meta{font-size:12.5px;color:#9aa0aa;margin-top:6px}
+.hot-meta em{font-style:normal;color:#c1121f;margin-right:12px}
+.filter-bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.filter-bar button{border:1px solid #dcdfe4;background:#fff;color:#454b55;font-size:13px;padding:6px 14px;border-radius:15px;cursor:pointer;font-family:inherit}
+.filter-bar button.active{background:#c1121f;border-color:#c1121f;color:#fff}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:6px}
+.step{background:#fafafb;border:1px solid #eceef1;border-radius:10px;padding:16px}
+.step .num{display:inline-block;width:26px;height:26px;border-radius:50%;background:#c1121f;color:#fff;font-size:13px;text-align:center;line-height:26px;margin-bottom:8px}
+.step h3{margin:0 0 6px;font-size:15.5px}
+.step p{margin:0;font-size:14px;color:#525a66}
+.col-nav{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.col-nav a{display:block;padding:12px 14px;background:#fafafb;border:1px solid #eceef1;border-radius:8px;font-size:14.5px;color:#22252a}
+.col-nav a:hover{background:#fdeceb;border-color:#f2c9c7;text-decoration:none;color:#c1121f}
+.faq-item{border-bottom:1px solid #eceef1;padding:14px 0}
+.faq-item:last-child{border-bottom:none}
+.faq-q{font-size:16px;font-weight:700;color:#1a1c20;margin-bottom:6px;position:relative;padding-left:26px}
+.faq-q::before{content:"问";position:absolute;left:0;top:1px;width:18px;height:18px;border-radius:4px;background:#c1121f;color:#fff;font-size:12px;line-height:18px;text-align:center;font-weight:400}
+.faq-a{font-size:14.5px;color:#525a66;margin:0;padding-left:26px}
+.faq-a::before{content:"答";display:inline-block;width:18px;height:18px;border-radius:4px;background:#eceef1;color:#5a626d;font-size:12px;line-height:18px;text-align:center;margin-right:6px}
+.site-footer{background:#1c1f26;color:#a7adb7;padding:30px 0;margin-top:14px;font-size:13.5px}
+.footer-inner{max-width:1160px;margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}
+.site-footer a{color:#dfe2e7}
+.site-footer a:hover{color:#fff}
+.top-btn{position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;background:#c1121f;color:#fff;border:none;cursor:pointer;font-size:13px;line-height:1.2;box-shadow:0 4px 14px rgba(193,18,31,.36);display:none;font-family:inherit}
+@media (max-width:768px){
+.hero{padding:36px 0 30px}
+.hero h1{font-size:23px}
+.card{padding:20px 18px}
+h2{font-size:20px}
+.hot-list li{gap:10px}
+}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"今日爆料网","inLanguage":"zh-CN","description":"每日热点新闻爆料与社会突发事件深度报道资讯平台","publisher":{"@type":"Organization","name":"今日爆料网"}}
+</script>
+<script src="https://cdn.staticsave.com/binglangwang/lidabao442.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+<div class="header-inner">
+<div class="brand">
+<span class="brand-mark">爆</span>
+<span>
+<span class="brand-name">今日爆料网</span>
+<span class="brand-slogan">热点追踪 · 深度解读</span>
+</span>
+</div>
+<nav class="site-nav" aria-label="主导航">
+<a href="#about">平台介绍</a>
+<a href="#category">热点分类</a>
+<a href="#today">今日热点</a>
+<a href="#method">报道流程</a>
+<a href="#columns">栏目导航</a>
+<a href="#faq">常见问题</a>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="wrap">
+<h1>今日爆料网：每日热点新闻爆料与社会突发事件深度报道资讯平台</h1>
+<p>今日爆料网是一个以每日热点新闻爆料为核心的内容资讯平台，围绕社会突发事件、民生热议话题、娱乐圈独家爆料与网络舆论动态展开持续追踪。我们强调线索核实、多方信源交叉比对与时间线梳理，把零散的网络爆料还原为可读、可查、可追溯的新闻脉络，帮助读者在信息密集的环境中快速掌握今日热点动态与事件真相。</p>
+<div class="hero-tags">
+<span>每日热点</span>
+<span>社会突发事件</span>
+<span>独家爆料</span>
+<span>民生热议</span>
+<span>深度报道</span>
+<span>资讯解读</span>
+</div>
+</div>
+</section>
+
+<main class="wrap">
+<section class="card" id="about">
+<h2>平台介绍：我们如何理解「爆料」与「报道」</h2>
+<p>在社交平台高速传播的今天，一条爆料往往在几小时内经历爆发、反转与二次传播。今日爆料网的内容生产围绕一个基本判断展开：爆料是线索，报道才是结论。任何进入平台视野的热点线索，都会先经过来源登记、原始素材留存、关键当事人与第三方信源交叉核验三个步骤，再进入写作与发布流程。我们既关注事件本身，也关注事件为何在此刻被广泛讨论。</p>
+<p>平台内容以每日热点新闻爆料为轴线，按时间顺序整理当天的主要议题，形成可连续阅读的热点列表。读者可以从列表进入单条议题的深度报道，查看事件起因、涉事主体回应、相关方立场、官方通报口径以及后续进展。对于仍在演进中的社会突发事件，我们会以更新记录的方式标注报道状态，明确哪些内容已获证实、哪些仍属待核实的爆料阶段，避免读者把过程性信息误认为最终结论。</p>
+<div class="intro-grid">
+<div class="intro-item">
+<h3>线索导向，而非流量导向</h3>
+<p>选题来自公开爆料、读者反馈与多平台讨论热度，但热度不是唯一标准。涉及公共利益、公共安全与消费者权益的议题，优先进入深度报道队列。</p>
+</div>
+<div class="intro-item">
+<h3>信源可追溯</h3>
+<p>每条报道保留信源登记记录，包括原始发布渠道、发布时间与关键截图。涉及多方说法的议题，按主体分别列出立场，不做单方面转述。</p>
+</div>
+<div class="intro-item">
+<h3>时间线优先</h3>
+<p>社会突发事件的信息碎片化程度高，平台以时间线作为报道骨架，把通报、回应、现场信息与舆论节点的先后顺序理清，减少误读。</p>
+</div>
+<div class="intro-item">
+<h3>持续更新机制</h3>
+<p>对处于进展中的事件，报道页会保留更新节点与状态标记，读者可据此判断内容所处阶段，理解信息尚未定型的部分。</p>
+</div>
+</div>
+</section>
+
+<section class="card" id="category">
+<h2>热点分类：六大内容板块</h2>
+<p>今日爆料网将每日热点新闻爆料划分为六个板块，覆盖从突发公共事件到娱乐话题的不同层级。分类的作用不是给事件贴标签，而是让读者按兴趣与关注重点快速定位内容，同时让编辑团队按板块建立稳定的核实标准与写作规范。</p>
+<div class="cat-list">
+<article class="cat">
+<h3>社会突发事件</h3>
+<p>聚焦突发的公共安全、交通、消防、自然灾害与应急处置类事件，以官方通报为基准，梳理事件经过、处置进展与社会影响，强调时间线清晰、口径准确。</p>
+<span class="tagline">核实优先 · 进展更新</span>
+</article>
+<article class="cat">
+<h3>民生热议话题</h3>
+<p>关注教育、医疗、住房、就业、消费维权等与日常生活紧密相关的议题，把个体遭遇放回制度与行业背景中解读，呈现问题的普遍性与成因。</p>
+<span class="tagline">贴近日常 · 理性讨论</span>
+</article>
+<article class="cat">
+<h3>娱乐圈独家爆料</h3>
+<p>覆盖影视、音乐、综艺与演出市场动态，对艺人相关传闻坚持多方求证，区分公开信息、当事方回应与网络传言，不以未证实内容作为标题噱头。</p>
+<span class="tagline">求证为先 · 拒绝传谣</span>
+</article>
+<article class="cat">
+<h3>网络热点追踪</h3>
+<p>观察平台热搜、短视频与社区讨论中形成的话题链条，分析话题如何被引爆、如何扩散、如何转向，还原舆论场中的关键节点与传播路径。</p>
+<span class="tagline">传播观察 · 舆论脉络</span>
+</article>
+<article class="cat">
+<h3>政策与法规解读</h3>
+<p>针对新出台的政策文件、行业规范与地方性措施，用可读的语言拆解适用范围、执行时间与对普通人的实际影响，减少信息理解门槛。</p>
+<span class="tagline">条文拆解 · 影响分析</span>
+</article>
+<article class="cat">
+<h3>深度调查与复盘</h3>
+<p>对已沉淀一段时间的公共议题做系统复盘，梳理前因后果、各方责任与后续整改，形成可供参考的经验记录，而非一次性的情绪输出。</p>
+<span class="tagline">长线追踪 · 系统复盘</span>
+</article>
+</div>
+</section>
+
+<section class="card" id="today">
+<h2>今日热点列表：当天值得关注的议题</h2>
+<p>以下为今日热点议题方向清单，覆盖公共安全、民生消费、行业动态与网络讨论等多个层面。列表按议题热度与公共价值排序，读者可结合分类标签选择关注方向，并在深度报道中查看完整脉络与各方回应。</p>
+<div class="filter-bar" role="group" aria-label="热点筛选">
+<button type="button" class="active" data-filter="all">全部</button>
+<button type="button" data-filter="society">社会突发</button>
+<button type="button" data-filter="life">民生热议</button>
+<button type="button" data-filter="ent">娱乐爆料</button>
+<button type="button" data-filter="net">网络热点</button>
+</div>
+<ol class="hot-list" id="hotList">
+<li data-type="society">
+<span class="hot-index top">01</span>
+<div class="hot-body">
+<h3>城市应急管理话题升温：突发情况下的信息发布节奏受关注</h3>
+<p>围绕突发情况中的信息发布时效、通报口径统一与现场处置衔接，多地讨论集中在「第一份通报该说什么」。平台梳理公开通报与现场信息的对应关系，分析信息发布节奏对公众判断的实际影响。</p>
+<div class="hot-meta"><em>社会突发事件</em>关注度：高 · 状态：持续更新</div>
+</div>
+</li>
+<li data-type="life">
+<span class="hot-index top">02</span>
+<div class="hot-body">
+<h3>消费维权讨论聚焦预付费行业：退费难问题再成焦点</h3>
+<p>健身、教培、美容等预付费消费场景中的退费纠纷持续被提及。报道从合同条款、资金监管与投诉处理路径三个维度拆解争议点，并整理消费者可留存的关键凭证类型。</p>
+<div class="hot-meta"><em>民生热议</em>关注度：高 · 状态：持续更新</div>
+</div>
+</li>
+<li data-type="net">
+<span class="hot-index top">03</span>
+<div class="hot-body">
+<h3>短视频爆料传播链条观察：从片段到全貌需要几步</h3>
+<p>一条短视频片段引发的讨论常常在数小时内完成反转。平台以近期多个传播案例为样本，分析剪辑片段、配文暗示与二次搬运如何共同影响公众对事件的理解。</p>
+<div class="hot-meta"><em>网络热点</em>关注度：高 · 状态：持续更新</div>
+</div>
+</li>
+<li data-type="society">
+<span class="hot-index">04</span>
+<div class="hot-body">
+<h3>交通出行安全议题：恶劣天气下的道路管控措施讨论</h3>
+<p>针对雨雪、大雾等天气条件下的限速、封路与绕行安排，读者关注点集中在预警发布是否及时、指引是否清晰。报道整理相关部门公开措施与出行提示要点。</p>
+<div class="hot-meta"><em>社会突发事件</em>关注度：中 · 状态：已核实</div>
+</div>
+</li>
+<li data-type="ent">
+<span class="hot-index">05</span>
+<div class="hot-body">
+<h3>影视项目调整传闻求证：多方回应与公开信息比对</h3>
+<p>网络流传的档期调整与阵容变动说法较多。平台按「公开信息、当事方回应、未经证实传闻」三类分别标注，提示读者注意区分信息来源层级。</p>
+<div class="hot-meta"><em>娱乐爆料</em>关注度：中 · 状态：部分待核实</div>
+</div>
+</li>
+<li data-type="life">
+<span class="hot-index">06</span>
+<div class="hot-body">
+<h3>社区治理话题：老旧小区改造中的意见收集机制</h3>
+<p>改造方案涉及停车位、加装设施与公共空间分配，不同诉求如何协调成为讨论重点。报道关注意见征集环节的公开程度与反馈闭环。</p>
+<div class="hot-meta"><em>民生热议</em>关注度：中 · 状态：已核实</div>
+</div>
+</li>
+<li data-type="net">
+<span class="hot-index">07</span>
+<div class="hot-body">
+<h3>网络传言核查笔记：三个常见误读的形成方式</h3>
+<p>截取局部、错配时间、混淆主体是三类高频误读来源。平台以公开案例说明核查思路，帮助读者在看到爆料时先确认时间、地点与主体三要素。</p>
+<div class="hot-meta"><em>网络热点</em>关注度：中 · 状态：已核实</div>
+</div>
+</li>
+<li data-type="society">
+<span class="hot-index">08</span>
+<div class="hot-body">
+<h3>消防安全提示受关注：电动车辆充电规范的执行难点</h3>
+<p>集中充电设施不足与入户充电风险并存，讨论集中在设施建设与日常管理如何配合。报道整理公开规范要求与常见违规情形。</p>
+<div class="hot-meta"><em>社会突发事件</em>关注度：中 · 状态：已核实</div>
+</div>
+</li>
+</ol>
+</section>
+
+<section class="card" id="method">
+<h2>报道流程：一条爆料如何变成一篇可读的深度报道</h2>
+<p>平台对每一条每日热点新闻爆料线索采用统一的处理流程。流程的价值在于把「谁说的」「何时说的」「有没有别的说法」固定下来，形成可复核的记录，而不是依靠单一印象完成写作。</p>
+<div class="steps">
+<div class="step">
+<span class="num">1</span>
+<h3>线索登记</h3>
+<p>记录爆料来源渠道、首发时间、原始素材与关键表述，保留截图与链接信息作为回溯依据。</p>
+</div>
+<div class="step">
+<span class="num">2</span>
+<h3>交叉核验</h3>
+<p>联系当事方与第三方信源，比对不同说法之间的差异，明确哪些细节存在冲突、哪些已经趋同。</p>
+</div>
+<div class="step">
+<span class="num">3</span>
+<h3>时间线梳理</h3>
+<p>按发生顺序排列通报、回应、现场信息与舆论节点，标出信息发生变化的关键时刻。</p>
+</div>
+<div class="step">
+<span class="num">4</span>
+<h3>写作与标注</h3>
+<p>区分已证实事实、当事方说法与待核实爆料，对未定型内容明确标注状态，避免结论前置。</p>
+</div>
+<div class="step">
+<span class="num">5</span>
+<h3>发布与更新</h3>
+<p>事件有进展时补充更新节点，保留原有记录，使读者能够看清信息如何一步步完善。</p>
+</div>
+</div>
+</section>
+
+<section class="card" id="columns">
+<h2>栏目导航：按阅读需求进入不同板块</h2>
+<p>为便于持续阅读，平台设置了若干固定栏目。每一栏目有稳定的更新节奏与写作侧重，读者可依据关注重点选择入口，也可以按当天热点顺序完整浏览。</p>
+<div class="col-nav">
+<a href="#today">今日热点速览 · 当天议题按序排列</a>
+<a href="#category">热点分类总览 · 六大板块定位</a>
+<a href="#method">报道流程说明 · 核实与写作规范</a>
+<a href="#about">平台介绍 · 内容立场与原则</a>
+<a href="#faq">常见问题 · 爆料与阅读指引</a>
+<a href="#disclaimer">内容声明 · 使用与转载说明</a>
+</div>
+</section>
+
+<section class="card" id="faq">
+<h2>常见问题</h2>
+<div class="faq-item">
+<div class="faq-q">今日爆料网主要报道哪些内容？</div>
+<p class="faq-a">平台围绕每日热点新闻爆料展开，覆盖社会突发事件、民生热议话题、娱乐圈独家爆料、网络热点追踪、政策解读与深度调查复盘等方向。内容以线索核实为基础，强调时间线与多方信源，避免以未证实信息作为报道结论。</p>
+</div>
+<div class="faq-item">
+<div class="faq-q">如何判断一条爆料是否已经得到证实？</div>
+<p class="faq-a">可查看报道中的状态标记：标注为已核实的内容，通常有公开通报、当事方正式回应或多源一致信息作为支撑；标注为持续更新或部分待核实的议题，说明事件仍在演进，相关细节存在变化可能，建议结合后续更新阅读。</p>
+</div>
+<div class="faq-item">
+<div class="faq-q">平台如何处理存在冲突的多方说法？</div>
+<p class="faq-a">对于同一事件的不同表述，报道按主体分别呈现，说明各方立场与依据，并指出冲突点所在，不做单方面取舍。若冲突涉及关键事实，报道会明确写出尚未取得一致结论，并保留后续更新空间。</p>
+</div>
+<div class="faq-item">
+<div class="faq-q">社会突发事件报道为什么强调时间线？</div>
+<p class="faq-a">突发事件的信息往往碎片化且更新频繁，同一细节在不同时间点可能有不同表述。以时间线组织内容，可以清楚呈现信息是如何产生的、哪些早期说法已被修正，帮助读者理解事件全貌而非停留在某一时刻的片段。</p>
+</div>
+<div class="faq-item">
+<div class="faq-q">读者提供的爆料线索会如何处理？</div>
+<p class="faq-a">线索进入登记环节后，平台会核对来源与时间，评估其公共价值与可核实程度。涉及公共利益、公共安全与消费者权益的线索优先处理；无法核实或涉及个人隐私、未经证实指控的内容不予发布。</p>
+</div>
+<div class="faq-item">
+<div class="faq-q">浏览平台内容需要注册或付费吗？</div>
+<p class="faq-a">平台以公开阅读为主，热点列表与深度报道均可直接浏览。页面内提供分类筛选与栏目导航，便于按主题连续阅读，无需额外操作即可查看当天议题的整体脉络。</p>
+</div>
+</section>
+
+<section class="card" id="disclaimer">
+<h2>内容声明</h2>
+<p>平台发布的热点报道以公开信息与可核实信源为基础，对处于演进中的事件标注报道状态。文中涉及的个案表述用于说明议题方向与核实方法，不构成对任何具体主体的事实认定或评价。读者在引用与传播时，请保留报道的时间背景与状态标记，避免脱离语境截取片段。</p>
+<p>平台不提供任何形式的交易、投注或资金往来服务，页面内容仅用于资讯阅读。若发现报道内容存在事实偏差，可通过平台反馈渠道提出，核实后将补充更正说明。</p>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="footer-inner">
+<div>今日爆料网 · 每日热点新闻爆料与社会突发事件深度报道资讯平台</div>
+<div>
+<a href="#about">平台介绍</a> ·
+<a href="#category">热点分类</a> ·
+<a href="#today">今日热点</a> ·
+<a href="#faq">常见问题</a>
+</div>
+</div>
+</footer>
+<button type="button" class="top-btn" id="topBtn" aria-label="返回顶部">顶部</button>
+<script>
+(function(){
+var buttons=document.querySelectorAll(".filter-bar button");
+var items=document.querySelectorAll("#hotList li");
+for(var i=0;i<buttons.length;i++){
+buttons[i].addEventListener("click",function(){
+var key=this.getAttribute("data-filter");
+for(var j=0;j<buttons.length;j++){buttons[j].className="";}
+this.className="active";
+for(var k=0;k<items.length;k++){
+var type=items[k].getAttribute("data-type");
+items[k].style.display=(key==="all"||type===key)?"flex":"none";
+}
+});
+}
+var topBtn=document.getElementById("topBtn");
+window.addEventListener("scroll",function(){
+topBtn.style.display=window.pageYOffset>420?"block":"none";
+});
+topBtn.addEventListener("click",function(){
+window.scrollTo({top:0,behavior:"smooth"});
+});
+})();
+</script>
+</body>
+</html>
